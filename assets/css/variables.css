@@ -1,0 +1,59 @@
+/* Makes the font size of root element to 10px (62.5% of 16px = 10px) */
+
+/* Light Theme */
+:root {
+   --primary-text: #333333;
+   --headline-text: #0C3823;
+   --subheading-text: #555555;
+   --navbar-bg: #FFFFFF;
+   --sidebar-bg: #F5F5F5;
+   --body-bg: #FFFFFF;
+   --button-accent: #2C6816;
+   --border-color: rgb(10, 74, 13);
+   --hover-state: #0C3823;
+
+   --h1-size: clamp(2rem, 5vw, 3rem);
+   --h2-size: clamp(1.75rem, 4vw, 2.5rem);
+   --h3-size: clamp(1.5rem, 3.5vw, 2rem);
+   --h4-size: clamp(1.25rem, 3vw, 1.75rem);
+   --h5-size: clamp(1rem, 2.5vw, 1.5rem);
+   --h6-size: clamp(0.875rem, 2vw, 1.25rem);
+}
+
+.text-h1 {
+   font-size: var(--h1-size);
+}
+
+.text-h2 {
+   font-size: var(--h2-size);
+}
+
+.text-h3 {
+   font-size: var(--h3-size);
+}
+
+.text-h4 {
+   font-size: var(--h4-size);
+}
+
+.text-h5 {
+   font-size: var(--h5-size);
+}
+
+.text-h6 {
+   font-size: var(--h6-size);
+}
+
+
+/* Dark Theme */
+.dark-theme {
+   --primary-text: #EDEDED;
+   --headline-text: #FFFFFF;
+   --subheading-text: #9B59B6;
+   --navbar-bg: #1A1A1A;
+   --sidebar-bg: #242424;
+   --body-bg: #181818;
+   --button-accent: #FF5733;
+   --border-color: #333333;
+   --hover-state: #FF7050;
+}
