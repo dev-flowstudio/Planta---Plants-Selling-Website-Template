@@ -69,6 +69,7 @@
    height: 10px;
    border-radius: 20px;
    background: var(--button-accent);
+   background: #fff;
 }
 
 
@@ -89,6 +90,7 @@
 .hero-content .hero-title {
    width: 100%;
    color: var(--headline-text);
+   color: #fff;
    font-size: 3rem;
    margin-bottom: 1rem;
 }
@@ -98,6 +100,7 @@
    max-width: 500px;
    margin-bottom: 2rem;
    color: var(--hover-state);
+   color: #fff;
 }
 
 .hero-content .hero-cta-btn {
@@ -174,12 +177,94 @@
    margin: 0 auto;
 }
 
+
+.gallery-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 100px 3rem;
+   background: lightgray;
+}
+
+.gallery-section .section-container::before {
+   position: absolute;
+   content: "Gallery";
+   font-size: 10rem;
+   font-weight: bold;
+   color: #E3E3E3;
+   z-index: ;
+}
+
+.gallery-section .section-title {
+   position: relative;
+   color: var(--headline-text);
+   text-align: center;
+   margin: 0 auto;
+   margin-bottom: 40px;
+   letter-spacing: 1px;
+   z-index: 1;
+}
+
+.gallery-section .section-description {
+   position: relative;
+   max-width: 600px;
+   text-align: center;
+   margin: 0 auto;
+   margin-bottom: 30px;
+   z-index: 1;
+}
+
+.gallery-section .gallery-grid {
+   position: relative;
+   display: grid;
+   gap: 0 20px;
+   grid-template: auto / repeat(5, 1fr);
+   margin-bottom: 20px;
+   z-index: 1;
+}
+
+.gallery-section .gallery-grid .grid-item {
+   width: 100%;
+   overflow: hidden;
+   align-self: center;
+}
+
+.gallery-section .gallery-grid .grid-item img {
+   width: 100%;
+}
+
+.gallery-section .btn-more {
+   display: block;
+   width: max-content;
+   background: var(--button-accent);
+   box-shadow: -10px 10px 0 #bbb;
+   color: #fff;
+   padding: .5rem 2rem;
+   margin: 0 auto;
+   font-size: 1rem;
+   transition: .3s;
+   text-transform: capitalize;
+}
+
+
+
+
 .products-section {
    position: relative;
    width: 100%;
    height: max-content;
    padding: 100px 3rem;
 }
+
+.products-section .section-container::before {
+   position: absolute;
+   content: "Products";
+   font-size: 10rem;
+   font-weight: bold;
+   color: #E3E3E3;
+   z-index: ;
+}
+
 
 .products-section .section-title {
    color: var(--headline-text);
@@ -351,7 +436,6 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-bottom: 20px;
 }
 
 .about-content img {
@@ -382,6 +466,13 @@
    color: var(--headline-text);
    text-align: center;
    margin: 0 auto;
+   margin-bottom: 20px;
+}
+
+.services-section .section-description {
+   text-align: center;
+   max-width: 650px;
+   margin: 0 auto;
    margin-bottom: 40px;
 }
 
@@ -389,16 +480,25 @@
    max-width: 1300px;
    margin: 0 auto;
    display: grid;
-   gap: 30px 20px;
+   gap: 20px;
    grid-template: auto / repeat(3, 1fr);
    justify-content: center;
 }
 
+.service-list .service-item {
+   background: #fff;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+   border-radius: 20px;
+   padding: 30px;
+   transition: .3s;
+}
+
+.service-list .service-item:hover {
+   transform: scale(1.01);
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
 .service-list .service-item div {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
    margin-bottom: 20px;
 }
 
@@ -408,19 +508,12 @@
 }
 
 .service-list .service-item div img {
-   width: 50px;
-   height: 50px;
-   background: #EAFFF2;
-   padding: 10px;
-   border-radius: 10px;
+   width: 40px;
+   height: 40px;
    margin-bottom: 20px;
-   color: var(--primary-text);
-   font-size: 2rem;
 }
 
-.service-list .service-item p {
-   text-align: center;
-}
+.service-list .service-item p {}
 
 
 
@@ -495,6 +588,8 @@
 .contact-section .subscription-form .text-field {
    width: 100%;
    margin-right: 20px;
+   outline-offset: 5px;
+   outline: 1px solid #fff;
 }
 
 .contact-section .subscription-form .submit-btn {
@@ -534,7 +629,7 @@
    
    .contact-section .subscription-form .text-field {
       margin: 0;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
    }
    
    .contact-section .subscription-form .submit-btn {
@@ -567,7 +662,8 @@
    display: grid;
    place-content: center;
    background: var(--button-accent);
-   border-radius: 5px;
+   outline-offset: 5px;
+   outline: 1px solid var(--border-color);
 }
 
 #site-footer .footer-content .back-to-top i {
