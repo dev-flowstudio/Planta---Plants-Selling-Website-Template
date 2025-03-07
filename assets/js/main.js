@@ -17,9 +17,8 @@ window.onload = () => {
    // Hide preloader
    setTimeout(() => preloader.style.display = 'none', 1000);
    
-   site_header.style.height = window.innerHeight + "px";
+   site_header.style.height = window.innerHeight + 'px';
 };
-
 
 //___Navbar show and hide
 
