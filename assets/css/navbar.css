@@ -215,8 +215,17 @@
 }
 
 .navbar:hover .brand-logo,
-.navbar.fixed .brand-logo {
+.navbar.fixed .brand-logo,
+.navbar:hover .nav-menu .nav-item a,
+.navbar.fixed .nav-menu .nav-item a,
+.navbar:hover .nav-actions .social-media a,
+.navbar.fixed .nav-actions .social-media a {
    color: var(--button-accent);
+}
+
+.navbar:hover .nav-menu .nav-item a.active,
+.navbar.fixed .nav-menu .nav-item a.active {
+   color: var(--hover-state);
 }
 
 .navbar:hover #menu-icon span,
