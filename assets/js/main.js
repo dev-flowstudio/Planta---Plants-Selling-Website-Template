@@ -8,7 +8,9 @@ const preloader = document.querySelector('.preloader'),
    menu_icon = document.querySelector('#menu-icon'),
    header = document.querySelector('.header-content'),
    search_box = document.querySelector('.search-box'),
-   search_input = nav_actions.querySelector('.search-box input')
+   search_input = nav_actions.querySelector('.search-box input'),
+   backToTopBtn = document.querySelector("#back-to-top");
+
 
 window.onload = () => {
    // Hide preloader
