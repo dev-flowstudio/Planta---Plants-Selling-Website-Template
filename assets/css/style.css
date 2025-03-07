@@ -404,13 +404,6 @@
    font-weight: bold;
    transition: .3s;
    text-transform: capitalize;
-   display: flex;
-   align-items: center;
-}
-
-.products-section .btn-more img {
-   width: 20px;
-   margin-right: 10px;
 }
 
 .products-section .btn-more:hover {
