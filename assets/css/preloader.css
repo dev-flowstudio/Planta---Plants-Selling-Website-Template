@@ -8,7 +8,6 @@
    display: grid;
    place-content: center;
    z-index: 1000;
-   display: none;
 }
 
 .preloader .loader .brand-logo .icon {
