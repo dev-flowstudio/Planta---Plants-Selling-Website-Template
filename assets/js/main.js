@@ -176,28 +176,23 @@ const product_slider = new Swiper('.product-slider', {
          spaceBetween: 10
       },
       // when window width is >= 320px
-      320: {
+      400: {
          slidesPerView: 2,
          spaceBetween: 10
       },
       // when window width is >= 480px
-      580: {
+      600: {
          slidesPerView: 3,
-         spaceBetween: 20
+         spaceBetween: 10
       },
       // when window width is >= 640px
-      640: {
+      800: {
          slidesPerView: 4,
          spaceBetween: 20
       },
       // when window width is >= 880px
-      880: {
-         slidesPerView: 5,
-         spaceBetween: 20
-      },
-      // when window width is >= 1000px
       1000: {
-         slidesPerView: 6,
+         slidesPerView: 5,
          spaceBetween: 20
       },
    },
