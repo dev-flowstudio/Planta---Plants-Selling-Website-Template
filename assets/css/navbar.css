@@ -20,7 +20,7 @@
 .navbar.fixed .nav-content {}
 
 .nav-content .brand-logo {
-   color: var(--navbar-bg);
+   color: var(--button-accent);
    font-size: 1.5rem;
    font-weight: bold;
    display: flex;
@@ -53,7 +53,6 @@
 .nav-content .nav-menu .nav-item a {
    position: relative;
    color: var(--button-accent);
-   color: var(--navbar-bg);
    font-size: .8rem;
    font-weight: 600;
    text-transform: capitalize;
@@ -75,7 +74,6 @@
 .nav-content .nav-menu .nav-item a.active,
 .nav-content .nav-menu .nav-item a:hover:before {
    color: var(--hover-state);
-   color: var(--button-accent);
    transform: scaleX(1);
 }
 
@@ -139,7 +137,6 @@
 
 .nav-actions .social-media a {
    color: var(--button-accent);
-   color: var(--navbar-bg);
    margin-right: 1rem;
 }
 
@@ -181,17 +178,17 @@
    z-index: 100;
 }
 
-.nav-actions #menu-icon:hover span,
-.nav-actions #menu-icon.fixed span {
-   background: var(--hover-state);
-}
-
 .nav-actions #menu-icon span {
    display: block;
    width: 20px;
    height: 1px;
-   background: #fff;
+   background: var(--button-accent);
    transition: .5s;
+}
+
+.nav-actions #menu-icon:hover span,
+.nav-actions #menu-icon.fixed span {
+   background: var(--hover-state);
 }
 
 .nav-actions #menu-icon span:first-child {
@@ -213,28 +210,6 @@
 .navbar.fixed {
    background: var(--navbar-bg);
 }
-
-.navbar:hover .brand-logo,
-.navbar.fixed .brand-logo,
-.navbar:hover .nav-menu .nav-item a,
-.navbar.fixed .nav-menu .nav-item a,
-.navbar:hover .nav-actions .social-media a,
-.navbar.fixed .nav-actions .social-media a {
-   color: var(--button-accent);
-}
-
-.navbar:hover .nav-menu .nav-item a.active,
-.navbar.fixed .nav-menu .nav-item a.active {
-   color: var(--hover-state);
-}
-
-.navbar:hover #menu-icon span,
-.navbar.fixed #menu-icon span {
-   background: var(--button-accent);
-}
-
-
-
 
 @media only screen and (max-width: 1000px) {
    .nav-content {
@@ -270,12 +245,7 @@
    }
    
    .nav-content .nav-menu .nav-item a {
-      color: var(--button-accent);
       font-size: 1rem;
-   }
-   
-   .nav-content .nav-menu .nav-item a.active {
-      color: var(--hover-state);
    }
    
    .nav-actions {
