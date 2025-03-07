@@ -2,14 +2,25 @@
 
 /* Light Theme */
 :root {
-   --primary-text: #333333;
-   --headline-text: #0C3823;
-   --subheading-text: #555555;
-   --navbar-bg: #FFFFFF;
-   --body-bg: #FFFFFF;
-   --button-accent: #2C6816;
-   --border-color: rgb(10, 74, 13);
-   --hover-state: #0C3823;
+   --primary-text: #1A1A1A; /* Deep black-gray for readability and modern contrast */
+   --headline-text: #0A4E2D; /* Rich green for a natural, fresh, and calming effect */
+   --subheading-text: #444444; /* Neutral gray for softer emphasis under headlines */
+   --light-text: #FFFFFF; /* Pure white for high contrast on dark backgrounds */
+
+   --navbar-bg: #FAFAF7; /* Off-white with a natural tone for a clean, airy feel */
+   --body-bg: #FFFFFF; /* Crisp white for a fresh, minimal, and open look */
+   --light-bg: #F5F5F0; /* Soft white alternative, reducing harsh contrast */
+   --light-bg: #FFFFFF; /* Soft white alternative, reducing harsh contrast */
+   --dark-bg: #0A2E1F; /* Deep green-black for high contrast when using white text */
+
+   --button-accent: #0A4E2D; /* Vibrant but grounded green, reinforcing the plant theme */
+   --hover-state: #2C6823; /* Lighter green for an active, engaging hover effect */
+   --border-color: #146B3A; /* Medium green for subtle but strong definition */
+
+   --warm-accent: #A67C52; /* Earthy beige-brown for warmth, balance, and organic feel */
+   --link-color: #0C3823; /* Dark green for natural, stylish link text */
+   --link-hover: #146B3A; /* Brighter green for clear interaction feedback */
+
 
    --h1-size: clamp(2rem, 5vw, 3rem);
    --h2-size: clamp(1.75rem, 4vw, 2.5rem);
@@ -17,6 +28,12 @@
    --h4-size: clamp(1.25rem, 3vw, 1.75rem);
    --h5-size: clamp(1rem, 2.5vw, 1.5rem);
    --h6-size: clamp(0.875rem, 2vw, 1.25rem);
+   
+   
+   
+   --font-primary: 'Playfair Display', serif;
+   --font-secondary: 'Lora', serif;
+   --font-accent: 'Montserrat', sans-serif;
 }
 
 .text-h1 {
