@@ -6,7 +6,8 @@ const preloader = document.querySelector('.preloader'),
    nav_items = nav_menu.querySelectorAll('.nav-item'),
    nav_actions = nav_content.querySelector('.nav-actions'),
    menu_icon = document.querySelector('#menu-icon'),
-   header = document.querySelector('.header-content'),
+   site_header = document.querySelector('#site-header'),
+   header_content = site_header.querySelector('.header-content'),
    search_box = document.querySelector('.search-box'),
    search_input = nav_actions.querySelector('.search-box input'),
    backToTopBtn = document.querySelector("#back-to-top");
@@ -15,6 +16,8 @@ const preloader = document.querySelector('.preloader'),
 window.onload = () => {
    // Hide preloader
    setTimeout(() => preloader.style.display = 'none', 1000);
+   
+   site_header.style.height = window.innerHeight + "px";
 };
 
 
