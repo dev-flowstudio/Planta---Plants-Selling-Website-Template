@@ -14,7 +14,7 @@ const preloader = document.querySelector('.preloader'),
 
 window.onload = () => {
    // Hide preloader
-   // setTimeout(() => preloader.style.display = 'none', 1000);
+   setTimeout(() => preloader.style.display = 'none', 1000);
 };
 
 
