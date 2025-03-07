@@ -10,10 +10,6 @@ const preloader = document.querySelector('.preloader'),
    search_box = document.querySelector('.search-box'),
    search_input = nav_actions.querySelector('.search-box input')
 
-// AOS.init({
-//    easing: 'ease-in-out-sine'
-// });
-
 window.onload = () => {
    // Hide preloader
    // setTimeout(() => preloader.style.display = 'none', 1000);
@@ -45,6 +41,12 @@ onscroll = () => {
 
 
 
+
+// backToTop
+backToTopBtn.addEventListener('click', () => {
+   window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 /*
 document.addEventListener("DOMContentLoaded", function() {
    const backToTopBtn = document.getElementById("back-to-top");
@@ -59,13 +61,6 @@ document.addEventListener("DOMContentLoaded", function() {
    }, { root: null, threshold: 0.1 });
    
    observer.observe(footer);
-   
-   
-   
-   // I added this function.
-   backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-   });
 });
 */
 
