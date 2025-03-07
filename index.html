@@ -150,19 +150,19 @@
             
             <div class="gallery-grid">
                <div data-aos="zoom-in" class="grid-item">
-                  <img src="/gallery-img/16a9851bc99f70acc5347583a78b279e.jpg" alt="">
+                  <img src="./assets/img/galleryImage1.jpg" alt="">
                </div>
                <div data-aos="zoom-in" class="grid-item">
-                  <img src="/gallery-img/5d116396e7120746bc9c3a8b9cb624e5.jpg" alt="">
+                  <img src="./assets/img/galleryImage2.jpg" alt="">
                </div>
                <div data-aos="zoom-in" class="grid-item">
-                  <img src="/gallery-img/6ec751840c0b3fd186295ead9023e24d.jpg" alt="">
+                  <img src="./assets/img/galleryImage3.jpg" alt="">
                </div>
                <div data-aos="zoom-in" class="grid-item">
-                  <img src="/gallery-img/96d9ebb0f4b311ae4e200afaa095e87b.jpg" alt="">
+                  <img src="./assets/img/galleryImage4.jpg" alt="">
                </div>
                <div data-aos="zoom-in" class="grid-item">
-                  <img src="/gallery-img/e5c1315451e3c693e0b8b7e20076e862.jpg" alt="">
+                  <img src="./assets/img/galleryImage5.jpg" alt="">
                </div>
             </div>
             
@@ -362,4 +362,126 @@
                <ul>
                   <li><a href="./index.html">Home</a></li>
                   <li><a href="./shop.html">Shop</a></li>
-                  <li><a href
+                  <li><a href="#">Plant care tips</a></li>
+                  <li><a href="./blog.html">Blog</a></li>
+                  <li><a href="#about">About us</a></li>
+               </ul>
+            </div>
+            
+            <div data-aos="zoom-in" class="column">
+               <h5>Our products</h5>
+               <ul>
+                  <li><a href="#">Indoor plants</a></li>
+                  <li><a href="#">Outdoor plants</a></li>
+                  <li><a href="#">Indoor plant pots</a></li>
+                  <li><a href="#">Outdoor plant pots</a></li>
+                  <li><a href="#">Accessories</a></li>
+               </ul>
+            </div>
+            
+            <div data-aos="zoom-in" class="column">
+               <h5>Contact us</h5>
+               <ul>
+                  <li><a href="#">Contact number</a></li>
+                  <li><a href="mailto:info.planta@gmail.com">info.planta@gmail.com</a></li>
+               </ul>
+            </div>
+            
+            <div data-aos="zoom-in" class="column">
+               <h5>Social media</h5>
+               <ul class="social-links">
+                  <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                  <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                  <li><a href="#"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="bottom">
+            <p>© planta 2025. All rights reserved</p>
+            <p><a class="href" href="https://studioflow.site">flowstudio</a> creation</p>
+         </div>
+         
+         <button data-aos="zoom-in" id="back-to-top" class="back-to-top">
+            <i class="bi bi-chevron-up"></i>
+         </button>
+      </div>
+   </footer>
+   
+   <!-- JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <!-- <script src="https://kit.fontawesome.com/94a745351e.js" crossorigin="anonymous"></script> -->
+   <!-- LightGallery JS -->
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script> -->
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+   
+   <script src="./assets/package/swiper-bundle.min.js"></script>
+   <script src="./aos-master/dist/aos.js"></script>
+   <script src="./assets/js/main.js"></script>
+   
+   
+   <script>
+      AOS.init({
+         easing: 'ease-in-out-sine'
+      });
+      
+      // Initialize LightGallery
+      // lightGallery(document.getElementById('lightgallery'));
+   </script>
+   <!--
+   <script>
+      const canvas = document.getElementById("snowCanvas");
+      const ctx = canvas.getContext("2d");
+      
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      canvas.style.position = "fixed";
+      canvas.style.top = "0";
+      canvas.style.left = "0";
+      canvas.style.pointerEvents = "none"; // Makes sure clicks go through
+      
+      let snowflakes = [];
+      
+      function createSnowflakes() {
+         for (let i = 0; i < 100; i++) {
+            snowflakes.push({
+               x: Math.random() * canvas.width,
+               y: Math.random() * canvas.height,
+               radius: Math.random() * 3 + 2,
+               speed: Math.random() * 3 + 1,
+            });
+         }
+      }
+      
+      function drawSnowflakes() {
+         ctx.clearRect(0, 0, canvas.width, canvas.height);
+         ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+         ctx.beginPath();
+         snowflakes.forEach((flake) => {
+            ctx.moveTo(flake.x, flake.y);
+            ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
+         });
+         ctx.fill();
+      }
+      
+      function updateSnowflakes() {
+         snowflakes.forEach((flake) => {
+            flake.y += flake.speed;
+            if (flake.y > canvas.height) flake.y = 0; // Reset to top
+         });
+      }
+      
+      function animate() {
+         drawSnowflakes();
+         updateSnowflakes();
+         requestAnimationFrame(animate);
+      }
+      
+      createSnowflakes();
+      animate();
+   </script>
+   -->
+</body>
+
+</html>
