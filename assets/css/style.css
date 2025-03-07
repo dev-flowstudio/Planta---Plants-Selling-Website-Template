@@ -392,6 +392,7 @@
 
 .products-section .btn-more {
    position: relative;
+   display: block;
    width: max-content;
    background: var(--button-accent);
    outline-offset: 5px;
