@@ -484,7 +484,17 @@
    padding: 100px 3rem;
 }
 
+.services-section .section-container::before {
+   position: absolute;
+   content: "Services";
+   font-size: 10rem;
+   font-weight: bold;
+   color: #E3E3E355;
+   z-index: 0;
+}
+
 .services-section .section-title {
+   position: relative;
    color: var(--headline-text);
    text-align: center;
    margin: 0 auto;
@@ -492,6 +502,7 @@
 }
 
 .services-section .section-description {
+   position: relative;
    text-align: center;
    max-width: 650px;
    margin: 0 auto;
@@ -499,6 +510,7 @@
 }
 
 .service-list {
+   position: relative;
    max-width: 1300px;
    margin: 0 auto;
    display: grid;
@@ -537,6 +549,10 @@
 
 
 @media only screen and (max-width: 1000px) {
+   .services-section .section-container::before {
+      display: none;
+   }
+   
    .service-list {
       max-width: 800px;
       grid-template: auto / repeat(2, 1fr);
