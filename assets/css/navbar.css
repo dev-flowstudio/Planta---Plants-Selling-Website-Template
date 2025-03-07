@@ -29,7 +29,7 @@
 
 
 .nav-content .brand-logo {
-   color: var(--button-accent);
+   color: var(--link-color);
    font-size: 1.5rem;
    font-weight: bold;
    display: flex;
@@ -38,7 +38,7 @@
 }
 
 .nav-content .brand-logo:hover {
-   color: var(--hover-state);
+   color: var(--link-hover);
 }
 
 .nav-content .brand-logo .icon {
@@ -61,7 +61,7 @@
 
 .nav-content .nav-menu .nav-item a {
    position: relative;
-   color: var(--button-accent);
+   color: var(--link-color);
    font-size: .8rem;
    font-weight: 600;
    text-transform: capitalize;
@@ -70,7 +70,7 @@
 .nav-content .nav-menu .nav-item a::before {
    content: "";
    position: absolute;
-   background: var(--hover-state);
+   background: var(--link-hover);
    width: 100%;
    height: 1.5px;
    left: 0;
@@ -81,8 +81,8 @@
 }
 
 .nav-content .nav-menu .nav-item a.active,
-.nav-content .nav-menu .nav-item a:hover:before {
-   color: var(--hover-state);
+.nav-content .nav-menu .nav-item a:hover::before {
+   color: var(--link-hover);
    transform: scaleX(1);
 }
 
@@ -104,9 +104,9 @@
    overflow: hidden;
    display: flex;
    align-items: center;
-   background: #fff;
+   background: var(--light-bg);
    padding: 10px 5px;
-   border: 1px solid var(--primary-text);
+   border: 1px solid var(--border-color);
    border-radius: 50px;
 }
 
@@ -120,9 +120,9 @@
 .nav-actions .search-box input {
    width: 100%;
    border: none;
-   outline: var(--primary-text);
-   background: #fff;
-   color: var(--primary-text);
+   outline: var(--border-color);
+   background: var(--light-bg);
+   color: var(--light-text);
    transition: .3s;
    padding-left: 5px;
 }
@@ -132,8 +132,8 @@
 }
 
 .nav-actions .search-box label i {
-   color:var(--navbar-bg);
-   background: var(--primary-text);
+   color:var(--light-text);
+   background: var(--button-accent);
    padding: 5px 10px;
    border-radius: 50px;
 }
@@ -147,17 +147,17 @@
 }
 
 .nav-actions .social-media a {
-   color: var(--button-accent);
+   color: var(--link-color);
    margin-right: 1rem;
 }
 
 .nav-actions .social-media a:hover {
-   color: var(--hover-state);
+   color: var(--link-hover);
 }
 
 .nav-actions .signup-btn {
    background: var(--button-accent);
-   color: var(--navbar-bg);
+   color: var(--light-text);
    border-radius: 20px;
    padding: 8px 15px;
    font-size: 0.8rem;
@@ -170,12 +170,12 @@
    background: var(--hover-state);
 }
 
-.nav-actions .cart {
-   color: var(--primary-text);
+/* .nav-actions .cart {
+   color: var(--link-color);
    font-size: 20px;
    margin-left: 20px;
    display: none;
-}
+} */
 
 .nav-actions #menu-icon {
    background: none;
