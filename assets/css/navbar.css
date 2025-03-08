@@ -89,6 +89,74 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* Basic styles */
+
+.nav-menu  li {
+   position: relative;
+}
+
+.menu-btn,
+.submenu-btn,
+.dropdown li a {
+   background: none;
+   border: none;
+   color: var(--link-color);
+   padding: 10px 15px;
+   display: block;
+   text-align: left;
+   cursor: pointer;
+   width: 100%;
+   text-decoration: none;
+}
+
+/* Dropdown styling */
+.dropdown {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   background: var(--navbar-bg);
+   min-width: 150px;
+   display: none;
+   flex-direction: column;
+   border-radius: 5px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   z-index: 1000;
+}
+
+/* Sub-dropdown positioning */
+.dropdown .dropdown {
+   top: 0;
+   left: calc(100% + 5px);
+}
+
+/* Hover effect for desktop */
+@media (hover: hover) {
+   .nav-menu li:hover>.dropdown {
+      display: flex;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .nav-actions {
    display: flex;
    align-items: center;
