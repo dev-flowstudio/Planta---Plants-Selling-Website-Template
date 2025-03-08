@@ -90,6 +90,10 @@
    margin-bottom: 1rem;
 }
 
+.hero-content .hero-heading span {
+   color: var(--hover-state);
+}
+
 .hero-content .hero-subheading {
    max-width: 600px;
    color: var(--subheading-text);
@@ -178,17 +182,21 @@
    color: var(--headline-text);
    text-align: center;
    margin: 0 auto;
-   margin-bottom: 40px;
+   margin-bottom: 30px;
    letter-spacing: 1px;
+}
+
+.gallery-section .section-title span {
+   color: var(--hover-state);
 }
 
 .gallery-section .section-description {
    position: relative;
    color: var(--subheading-text);
-   max-width: 600px;
+   max-width: 650px;
    text-align: center;
    margin: 0 auto;
-   margin-bottom: 30px;
+   margin-bottom: 40px;
 }
 
 .gallery-section .gallery-grid {
@@ -264,17 +272,21 @@
    color: var(--headline-text);
    text-align: center;
    margin: 0 auto;
-   margin-bottom: 40px;
+   margin-bottom: 30px;
    letter-spacing: 1px;
+}
+
+.products-section .section-title span {
+   color: var(--hover-state);
 }
 
 .products-section .section-description {
    position: relative;
    color: var(--subheading-text);
-   max-width: 600px;
+   max-width: 650px;
    text-align: center;
    margin: 0 auto;
-   margin-bottom: 30px;
+   margin-bottom: 40px;
 }
 
 
@@ -449,7 +461,7 @@
 
 .about-content .section-title {
    color: var(--light-text);
-   margin-bottom: 20px;
+   margin-bottom: 30px;
 }
 
 .about-content .section-description {
@@ -489,7 +501,12 @@
    color: var(--headline-text);
    text-align: center;
    margin: 0 auto;
-   margin-bottom: 20px;
+   margin-bottom: 30px;
+   letter-spacing: 1px;
+}
+
+.services-section .section-title span {
+   color: var(--hover-state);
 }
 
 .services-section .section-description {
@@ -587,14 +604,19 @@
    color: var(--headline-text);
    text-align: center;
    margin: 0 auto;
-   margin-bottom: 40px;
+   margin-bottom: 30px;
+   letter-spacing: 1px;
+}
+
+.contact-section .section-title span {
+   color: var(--hover-state);
 }
 
 .contact-section .section-description {
    color: var(--subheading-text);
    max-width: 500px;
    text-align: center;
-   margin-bottom: 20px;
+   margin-bottom: 40px;
 }
 
 .contact-section .subscription-form {
