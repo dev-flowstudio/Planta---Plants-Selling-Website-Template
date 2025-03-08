@@ -20,8 +20,8 @@ html {
 }
 
 body {
-   font-family: 'Montserrat', sans-serif;
    font-size: 1rem;
+   font-family: var(--font-secondary);
    background-color: var(--body-bg);
    color: var(--primary-text);
    transition: .3s;
@@ -74,6 +74,7 @@ h6 {
    font-size: inherit;
    font-weight: inherit;
    margin: 0;
+   font-family: var(--font-primary);
 }
 
 h1 {
