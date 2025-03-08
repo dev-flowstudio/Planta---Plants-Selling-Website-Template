@@ -18,7 +18,6 @@
    transition: .3s;
 }
 
-.navbar:hover,
 .navbar.fixed {
    background: var(--navbar-bg);
 }
