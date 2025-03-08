@@ -335,3 +335,78 @@ number
 0
 Stretch space between slides (in px)
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+   document.querySelectorAll(".menu-btn, .submenu-btn").forEach(button => {
+      button.setAttribute("aria-expanded", "false");
+      
+      button.addEventListener("click", function(e) {
+         let dropdown = this.nextElementSibling;
+         let isExpanded = this.getAttribute("aria-expanded") === "true";
+         
+         // Close other menus, but not the current submenu
+         document.querySelectorAll(".dropdown").forEach(menu => {
+            if (menu !== dropdown && !menu.contains(dropdown)) {
+               menu.style.display = "none";
+               menu.previousElementSibling?.setAttribute("aria-expanded", "false");
+            }
+         });
+         
+         // Toggle clicked menu
+         dropdown.style.display = isExpanded ? "none" : "flex";
+         this.setAttribute("aria-expanded", isExpanded ? "false" : "true");
+         
+         e.stopPropagation(); // Prevent immediate closing
+      });
+   });
+   
+   // Close dropdowns when clicking outside
+   document.addEventListener("click", (e) => {
+      if (!e.target.closest(".menu")) {
+         document.querySelectorAll(".dropdown").forEach(menu => {
+            menu.style.display = "none";
+            menu.previousElementSibling?.setAttribute("aria-expanded", "false");
+         });
+      }
+   });
+   
+   // Ensure clicking a link in the dropdown closes the menu
+   document.querySelectorAll('.dropdown a[href^="#"]').forEach(link => {
+      link.addEventListener("click", (e) => {
+         let targetId = link.getAttribute("href").substring(1);
+         let targetElement = document.getElementById(targetId);
+         
+         if (targetElement) {
+            e.preventDefault(); // Prevent default jump
+            
+            // Scroll smoothly
+            targetElement.scrollIntoView({ behavior: "smooth" });
+            
+            // Close menu after scroll
+            setTimeout(() => {
+               document.querySelectorAll(".dropdown").forEach(menu => {
+                  menu.style.display = "none";
+                  menu.previousElementSibling?.setAttribute("aria-expanded", "false");
+               });
+            }, 300);
+         }
+      });
+   });
+});
