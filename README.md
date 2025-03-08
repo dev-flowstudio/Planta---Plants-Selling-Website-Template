@@ -1,1 +1,1 @@
-# Planta---Plants-Selling-Website-Template
+# Planta - Plants Selling Website Template
