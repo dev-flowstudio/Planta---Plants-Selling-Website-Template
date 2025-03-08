@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://dev-flowstudio.github.io/Planta---Plants-Selling-Website-Template/sitemap.xml
