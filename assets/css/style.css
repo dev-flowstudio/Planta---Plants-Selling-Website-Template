@@ -93,7 +93,7 @@
 .hero-content .hero-subheading {
    max-width: 600px;
    color: var(--subheading-text);
-   font-size: var(--h4-size);
+   font-size: var(--h5-size);
    margin-bottom: 3rem;
 }
 
@@ -168,6 +168,7 @@
    content: "Gallery";
    font-size: 10rem;
    font-weight: bold;
+   font-family: 'Montserrat', sans-serif;
    color: #E3E3E355;
    z-index: 0;
 }
@@ -253,6 +254,7 @@
    right: 3rem;
    font-size: 10rem;
    font-weight: bold;
+   font-family: 'Montserrat', sans-serif;
    color: #E3E3E355;
    z-index: 0;
 }
@@ -477,6 +479,7 @@
    content: "Services";
    font-size: 10rem;
    font-weight: bold;
+   font-family: 'Montserrat', sans-serif;
    color: #E3E3E355;
    z-index: 0;
 }
@@ -784,8 +787,7 @@
 
 .footer-content .bottom .footer_copyright,
 .footer-content .bottom .footer_credits {
-   color: var(--headline-text);
-   font-weight: 500;
+   color: var(--subheading-text);
 }
 
 .footer-content .bottom .footer_credits a {
