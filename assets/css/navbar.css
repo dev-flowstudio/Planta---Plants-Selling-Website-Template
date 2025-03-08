@@ -58,7 +58,7 @@
    margin: 0 10px;
 }
 
-.nav-content .nav-menu .nav-item a {
+.nav-content .nav-menu .nav-item>a {
    position: relative;
    color: var(--link-color);
    font-size: .8rem;
@@ -66,7 +66,7 @@
    text-transform: capitalize;
 }
 
-.nav-content .nav-menu .nav-item a::before {
+.nav-content .nav-menu .nav-item>a::before {
    content: "";
    position: absolute;
    background: var(--link-hover);
@@ -79,52 +79,59 @@
    transition: .3s;
 }
 
-.nav-content .nav-menu .nav-item a.active,
-.nav-content .nav-menu .nav-item a:hover::before {
+.nav-content .nav-menu .nav-item>a.active,
+.nav-content .nav-menu .nav-item>a:hover::before {
    color: var(--link-hover);
    transform: scaleX(1);
 }
 
 
 
+/* Dropdown menu styles */
 
-
-
-
-
-
-
-
-
-
-
-
-/* Basic styles */
-
-.nav-menu  li {
+.dropdown-menu {
    position: relative;
 }
 
-.menu-btn,
-.submenu-btn,
-.dropdown li a {
+.dropdown-menu .menu-btn {
+   color: var(--link-color);
+   font-size: .8rem;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+
+.dropdown-menu .menu-btn i {
+   margin-left: 10px;
+}
+
+.dropdown-menu .menu-btn,
+.dropdown-menu .submenu-btn,
+.dropdown-menu .dropdown li a {
    background: none;
    border: none;
    color: var(--link-color);
    padding: 10px 15px;
    display: block;
    text-align: left;
+   font-size: .8rem;
    cursor: pointer;
    width: 100%;
-   text-decoration: none;
+}
+
+.dropdown-menu .submenu-btn:hover,
+.dropdown-menu .dropdown li a:hover {
+   background: var(--hover-state);
+   color: var(--light-text);
+   border-radius: 5px;
 }
 
 /* Dropdown styling */
-.dropdown {
+.dropdown-menu .dropdown {
    position: absolute;
    top: 100%;
    left: 0;
    background: var(--navbar-bg);
+   width: max-content;
    min-width: 150px;
    display: none;
    flex-direction: column;
@@ -134,24 +141,17 @@
 }
 
 /* Sub-dropdown positioning */
-.dropdown .dropdown {
+.dropdown-menu .dropdown .dropdown {
    top: 0;
-   left: calc(100% + 5px);
+   left: calc(100% + 2px);
 }
 
 /* Hover effect for desktop */
 @media (hover: hover) {
-   .nav-menu li:hover>.dropdown {
+   .dropdown-menu li:hover>.dropdown {
       display: flex;
    }
 }
-
-
-
-
-
-
-
 
 
 
