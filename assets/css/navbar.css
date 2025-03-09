@@ -70,7 +70,7 @@
    left: 0;
    bottom: -40%;
    transform: scaleX(0);
-   transform-origin: left;
+   transform-origin: center;
    transition: .3s;
 }
 
