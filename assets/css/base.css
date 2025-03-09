@@ -21,7 +21,7 @@ html {
 
 body {
    font-size: 1rem;
-   font-family: var(--font-secondary);
+   font-family: var(--font-primary);
    background-color: var(--body-bg);
    color: var(--primary-text);
    transition: .3s;
