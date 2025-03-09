@@ -1,7 +1,7 @@
 .navbar {
    position: fixed;
    width: 100%;
-   padding: 0 3rem;
+   padding: 2rem 3rem;
    top: 0;
    left: 0;
    transition: .3s;
@@ -12,18 +12,13 @@
    width: 100%;
    max-width: 1300px;
    margin: 0 auto;
-   padding: 2rem 0;
    display: flex;
    align-items: center;
-   transition: .3s;
 }
 
 .navbar.fixed {
    background: var(--navbar-bg);
-}
-
-.navbar.fixed .nav-content {
-   padding: 1rem 0;
+   padding: 1rem 3rem;
 }
 
 
@@ -118,6 +113,10 @@
    width: 100%;
 }
 
+.dropdown-menu .menu-btn {
+   padding: 0;
+}
+
 .dropdown-menu .submenu-btn:hover,
 .dropdown-menu .dropdown li a:hover {
    background: var(--hover-state);
@@ -128,11 +127,11 @@
 /* Dropdown styling */
 .dropdown-menu .dropdown {
    position: absolute;
-   top: 100%;
+   top: 130%;
    left: 0;
    background: var(--navbar-bg);
    width: max-content;
-   min-width: 150px;
+   min-width: 160px;
    display: none;
    flex-direction: column;
    border-radius: 5px;
@@ -264,23 +263,12 @@
    transition: .5s;
 }
 
-.nav-actions #menu-icon:hover span,
-.nav-actions #menu-icon.fixed span {
+.nav-actions #menu-icon:hover span {
    background: var(--hover-state);
 }
 
 .nav-actions #menu-icon span:first-child {
    margin-bottom: 7px;
-}
-
-.nav-actions #menu-icon.fixed span:first-child {
-   transform-origin: left;
-   transform: translateY(-3.1px) rotate(45deg);
-}
-
-.nav-actions #menu-icon.fixed span:last-child {
-   transform-origin: left;
-   transform: translateY(3.1px) rotate(-45deg);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -298,27 +286,34 @@
    
    .nav-content .nav-menu {
       position: fixed;
-      top: -100%;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 0;
+      left: -100%;
+      width: max-content;
+      min-width: 300px;
+      min-height: 100vh;
       background: var(--navbar-bg);
       flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      padding: 2rem;
       transition: top .5s;
       z-index: 90;
    }
    
    .nav-content .nav-menu.active {
-      top: 0;
+      left: 0;
    }
    
    .nav-content .nav-menu .nav-item {
-      margin: 30px 0;
+      margin: 0 0 30px 0;
    }
    
-   .nav-content .nav-menu .nav-item a {
+   .nav-content .nav-menu .nav-item a,
+   .nav-content .nav-menu .menu-btn {
       font-size: 1rem;
    }
+   
+   
    
    .nav-actions {
       flex: none;
@@ -334,7 +329,9 @@
 }
 
 @media only screen and (max-width: 500px) {
-   .navbar {
-      padding: 0 2rem;
+   
+   .navbar,
+   .navbar.fixed {
+      padding: 1rem 2rem;
    }
 }
