@@ -14,8 +14,6 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   <!-- LightGallery CSS -->
-   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"> -->
    
    <link rel="stylesheet" href="./assets/bootstrap-icons-1.11.2/font/bootstrap-icons.min.css" type="text/css" media="all" />
    <link rel="stylesheet" href="./assets/package/swiper-bundle.min.css">
@@ -160,32 +158,6 @@
    <main id="main-content">
       <section id="gallery" class="gallery-section">
          <div class="section-container">
-            <!-- Gallery Container -->
-            <!-- <div id="lightgallery">
-               <a href="https://placekitten.com/800/600">
-                  <img src="/gallery-img/e5c1315451e3c693e0b8b7e20076e862.jpg" alt="">
-                  <img src="https://placekitten.com/200/150" alt="Kitten 1">
-               </a>
-               <a href="https://placekitten.com/801/601">
-                  <img src="/gallery-img/96d9ebb0f4b311ae4e200afaa095e87b.jpg" alt="">
-                  <img src="https://placekitten.com/200/151" alt="Kitten 2">
-               </a>
-               <a href="https://placekitten.com/802/602">
-                  <img src="/gallery-img/6ec751840c0b3fd186295ead9023e24d.jpg" alt="">
-                  <img src="https://placekitten.com/200/152" alt="Kitten 3">
-               </a>
-               <a href="https://placekitten.com/802/602">
-                  <img src="/gallery-img/5d116396e7120746bc9c3a8b9cb624e5.jpg" alt="">
-                  <img src="https://placekitten.com/200/152" alt="Kitten 3">
-               </a>
-               <a href="https://placekitten.com/802/602">
-                  <img src="/gallery-img/16a9851bc99f70acc5347583a78b279e.jpg" alt="">
-                  <img src="https://placekitten.com/200/152" alt="Kitten 3">
-               </a>
-            </div> -->
-            
-            
-            
             <h2 data-aos="zoom-in" class="section-title"><span>"Inspiration in Every</span> <br> Leaf – Stunning Indoor Green Décor"</h2>
             <p data-aos="zoom-in" class="section-description">Explore our curated gallery of beautifully styled indoor spaces. From cozy corners to statement greenery, get inspired to bring nature’s elegance into your home.</p>
             
@@ -212,6 +184,41 @@
       </section>
       
       
+      
+      <section class="inspiration-section">
+         <div class="container">
+            <h2 class="section-title"><span>"Get Inspired: Creative</span> <br>Ways to Style Plants in Your Space"</h2>
+            <p class="section-description">Discover creative ways to style your space with lush plants, elegant pots, and natural décor. Let nature breathe life into every corner of your home.</p>
+            
+            <div class="inspiration-grid">
+               <div class="inspiration-card">
+                  <img src="indoor.jpg" alt="Indoor Styling">
+                  <h3>Indoor Styling</h3>
+                  <p>Perfect plant placement for cozy homes.</p>
+               </div>
+               <div class="inspiration-card">
+                  <img src="outdoor.jpg" alt="Outdoor Beauty">
+                  <h3>Outdoor Beauty</h3>
+                  <p>Create a refreshing garden corner.</p>
+               </div>
+               <div class="inspiration-card">
+                  <img src="low-maintenance.jpg" alt="Low Maintenance Picks">
+                  <h3>Low Maintenance Picks</h3>
+                  <p>Greenery that thrives effortlessly.</p>
+               </div>
+               <div class="inspiration-card">
+                  <img src="small-space.jpg" alt="Small Space Ideas">
+                  <h3>Small Space Ideas</h3>
+                  <p>Maximize space with the right plants.</p>
+               </div>
+            </div>
+            
+            <a href="#" class="btn">Explore More Ideas</a>
+         </div>
+      </section>
+      
+      
+      
       <section id="products" class="products-section">
          <div class="section-container">
             <h2 data-aos="zoom-in" class="section-title"><span>"Beautiful Plants, Pots, and</span> <br>Décor to Bring Nature into Every Space"</h2>
@@ -222,102 +229,140 @@
                <div class="swiper-wrapper">
                   <!--Slides-->
                   <div class="swiper-slide">
-                     <img src="./assets/img/Chrysalidocarpus-lutescens-Areca-Palm-24x120cm-Aimee-Plant-Pot-Pear-33x28cm_e21e5e25-56eb-44e4-b7ff-1da6d35a61cb_1600x.jpg" alt="Planta Decorativa">
-                     <p class="product-title">Dracaena Fragrans 'Massangeana' (Evergreen Majesty)</p>
-                     <div class="product-overlay">
-                        <a href="javascript: void(0)">Preview</a>
+                     <div class="product-card">
+                        <div class="product-image">
+                           <img src="./assets/img/Chrysalidocarpus-lutescens-Areca-Palm-24x120cm-Aimee-Plant-Pot-Pear-33x28cm_e21e5e25-56eb-44e4-b7ff-1da6d35a61cb_1600x.jpg" alt="Elegant Snake Plant in Ceramic Pot">
+                           <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="product-info">
+                           <h3 class="product-title">Elegant Snake Plant in Ceramic Pot</h3>
+                           <p class="product-features">Air-Purifying | Low Maintenance | Eco-Friendly Pot</p>
+                           <div class="product-price">
+                              <span class="current-price">$29.99</span>
+                              <span class="original-price">$39.99</span>
+                           </div>
+                           <button class="btn">Shop Now</button>
+                        </div>
                      </div>
                   </div>
+                  
                   <div class="swiper-slide">
-                     <img src="./assets/img/Chlorophytum-Vittatum-Spider-Plant-12x35cm-Bilbao-Plant-Pot-Pale-Jade-14x14cm.jpg" alt="Planta Decorativa">
-                     <p class="product-title">Dracaena Marginata (Tall Green Elegance)</p>
-                     <div class="product-overlay">
-                        <a href="javascript: void(0)">Preview</a>
+                     <div class="product-card">
+                        <div class="product-image">
+                           <img src="./assets/img/Chlorophytum-Vittatum-Spider-Plant-12x35cm-Bilbao-Plant-Pot-Pale-Jade-14x14cm.jpg" alt="Elegant Snake Plant in Ceramic Pot">
+                           <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="product-info">
+                           <h3 class="product-title">Elegant Snake Plant in Ceramic Pot</h3>
+                           <p class="product-features">Air-Purifying | Low Maintenance | Eco-Friendly Pot</p>
+                           <div class="product-price">
+                              <span class="current-price">$29.99</span>
+                              <span class="original-price">$39.99</span>
+                           </div>
+                           <button class="btn">Shop Now</button>
+                        </div>
                      </div>
                   </div>
+                  
                   <div class="swiper-slide">
-                     <img src="./assets/img/Dracaena-fragrans-Burley-24x100cm-Raindrop-Tall-Balloon-Planter-Stone-37x60cm_1600x.jpg" alt="Planta Decorativa">
-                     <p class="product-title">Decorative indoor plants.</p>
-                     <div class="product-overlay">
-                        <a href="javascript: void(0)">Preview</a>
+                     <div class="product-card">
+                        <div class="product-image">
+                           <img src="./assets/img/Dracaena-fragrans-Burley-24x100cm-Raindrop-Tall-Balloon-Planter-Stone-37x60cm_1600x.jpg" alt="Elegant Snake Plant in Ceramic Pot">
+                           <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="product-info">
+                           <h3 class="product-title">Elegant Snake Plant in Ceramic Pot</h3>
+                           <p class="product-features">Air-Purifying | Low Maintenance | Eco-Friendly Pot</p>
+                           <div class="product-price">
+                              <span class="current-price">$29.99</span>
+                              <span class="original-price">$39.99</span>
+                           </div>
+                           <button class="btn">Shop Now</button>
+                        </div>
                      </div>
                   </div>
+                  
                   <div class="swiper-slide">
-                     <img src="./assets/img/Dracaena-fragrans-Lemon-Lime-Multi-Stem-24x140cm-_3stems_-Ben-Plant-Pot-Straw-Grass-30x41cm_1200x.jpg" alt="Planta Decorativa">
-                     <p class="product-title">Decorative indoor plants.</p>
-                     <div class="product-overlay">
-                        <a href="javascript: void(0)">Preview</a>
+                     <div class="product-card">
+                        <div class="product-image">
+                           <img src="./assets/img/Dracaena-fragrans-Lemon-Lime-Multi-Stem-24x140cm-_3stems_-Ben-Plant-Pot-Straw-Grass-30x41cm_1200x.jpg" alt="Elegant Snake Plant in Ceramic Pot">
+                           <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="product-info">
+                           <h3 class="product-title">Elegant Snake Plant in Ceramic Pot</h3>
+                           <p class="product-features">Air-Purifying | Low Maintenance | Eco-Friendly Pot</p>
+                           <div class="product-price">
+                              <span class="current-price">$29.99</span>
+                              <span class="original-price">$39.99</span>
+                           </div>
+                           <button class="btn">Shop Now</button>
+                        </div>
                      </div>
                   </div>
+                  
                   <div class="swiper-slide">
-                     <img src="./assets/img/Dracaena-fragrans-White-Jewel-Head-17x50cm-Cas-Plant-Pot-Cool-Grey-21x19cm_ce942f0f-7819-45e0-ba6d-ea10ae0a062d_1200x.jpg" alt="Planta Decorativa">
-                     <p class="product-title">Dracaena Reflexa 'Song of India' (Golden Glow Dracaena)</p>
-                     <div class="product-overlay">
-                        <a href="javascript: void(0)">Preview</a>
+                     <div class="product-card">
+                        <div class="product-image">
+                           <img src="./assets/img/Dracaena-fragrans-White-Jewel-Head-17x50cm-Cas-Plant-Pot-Cool-Grey-21x19cm_ce942f0f-7819-45e0-ba6d-ea10ae0a062d_1200x.jpg" alt="Elegant Snake Plant in Ceramic Pot">
+                           <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="product-info">
+                           <h3 class="product-title">Elegant Snake Plant in Ceramic Pot</h3>
+                           <p class="product-features">Air-Purifying | Low Maintenance | Eco-Friendly Pot</p>
+                           <div class="product-price">
+                              <span class="current-price">$29.99</span>
+                              <span class="original-price">$39.99</span>
+                           </div>
+                           <button class="btn">Shop Now</button>
+                        </div>
                      </div>
                   </div>
+                  
                   <div class="swiper-slide">
-                     <img src="./assets/img/eaa62a8025d3cdb39b4a8dbcea5d39e7.jpg" alt="Planta Decorativa">
-                     <p class="product-title">Dracaena Fragrans 'Massangeana' (Lush Tropic Cane)</p>
-                     <div class="product-overlay">
-                        <a href="javascript: void(0)">Preview</a>
+                     <div class="product-card">
+                        <div class="product-image">
+                           <img src="./assets/img/eaa62a8025d3cdb39b4a8dbcea5d39e7.jpg" alt="Elegant Snake Plant in Ceramic Pot">
+                           <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="product-info">
+                           <h3 class="product-title">Elegant Snake Plant in Ceramic Pot</h3>
+                           <p class="product-features">Air-Purifying | Low Maintenance | Eco-Friendly Pot</p>
+                           <div class="product-price">
+                              <span class="current-price">$29.99</span>
+                              <span class="original-price">$39.99</span>
+                           </div>
+                           <button class="btn">Shop Now</button>
+                        </div>
                      </div>
                   </div>
+                  
                   <div class="swiper-slide">
-                     <img src="./assets/img/Sansevieria-trifasciata-Laurentii-Variegated-Snake-Plant-30x90cm-Charlie-Plant-Pot-White-Washed-32x31cm.jpg" alt="Planta Decorativa">
-                     <p class="product-title">Areca Palm (Dypsis lutescens) (Golden Butterfly Palm)</p>
-                     <div class="product-overlay">
-                        <a href="javascript: void(0)">Preview</a>
+                     <div class="product-card">
+                        <div class="product-image">
+                           <img src="./assets/img/Sansevieria-trifasciata-Laurentii-Variegated-Snake-Plant-30x90cm-Charlie-Plant-Pot-White-Washed-32x31cm.jpg" alt="Elegant Snake Plant in Ceramic Pot">
+                           <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="product-info">
+                           <h3 class="product-title">Elegant Snake Plant in Ceramic Pot</h3>
+                           <p class="product-features">Air-Purifying | Low Maintenance | Eco-Friendly Pot</p>
+                           <div class="product-price">
+                              <span class="current-price">$29.99</span>
+                              <span class="original-price">$39.99</span>
+                           </div>
+                           <button class="btn">Shop Now</button>
+                        </div>
                      </div>
                   </div>
+                  
                   <div class="swiper-slide">
-                     <img src="./assets/img/aglaonema-plant-white-pot-isolated-white_357889-17.jpeg" alt="Planta Decorativa">
-                     <p class="product-title">Spider Plant (Chlorophytum comosum) (Air-Purifying Beauty)</p>
-                     <div class="product-overlay">
-                        <a href="javascript: void(0)">Preview</a>
-                     </div>
-                  </div>
-               </div>
-               <!--If we need pagination-->
-               <div class="swiper-pagination"></div>
-               
-               <!--If we need navigation buttons-->
-               <div class="product-prev">
-                  <i class="bi bi-chevron-left"></i>
-               </div>
-               <div class="product-next">
-                  <i class="bi bi-chevron-right"></i>
-               </div>
-               
-               <!--If we need scrollbar-->
-               <!-- <div class="swiper-scrollbar"></div> -->
-            </div>
-            
-            <a data-aos="zoom-in" href="javascript: void(0)" class="btn-more">More products</a>
-         </div>
-      </section>
-      
-      
-      <section data-aos="fade-up" id="about" class="about-section">
-         <div class="section-container">
-            <div class="about-content">
-               <span data-aos="zoom-in" class="section-quote">&ldquo;</span>
-               <h2 data-aos="zoom-in" class="section-title">"Crafting Beauty with Nature’s Touch"</h2>
-               <p data-aos="zoom-in" class="section-description">At Planta, we believe in the power of greenery to inspire, refresh, and elevate your space. Every plant, pot, and décor item is chosen with care, blending sustainability with beauty.</p>
-            </div>
-         </div>
-      </section>
-      
-      
-      <section data-aos="fade-up" id="about" class="about-section">
-         <div class="section-container">
-            <div class="about-content">
-               <span data-aos="zoom-in" class="section-quote">&ldquo;</span>
-               <h2 data-aos="zoom-in" class="section-title">"Crafting Beauty with Nature’s Touch"</h2>
-               <p data-aos="zoom-in" class="section-description">At Planta, we believe in the power of greenery to inspire, refresh, and elevate your space. Every plant, pot, and décor item is chosen with care, blending sustainability with beauty.</p>
-            </div>
-         </div>
-      </section>
+                     <div class="product-card">
+                        <div class="product-image">
+                           <img src="./assets/img/aglaonema-plant-white-pot-isolated-white_357889-17.jpeg" alt="Elegant Snake Plant in Ceramic Pot">
+                           <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="product-info">
+                           <h3 class="product-title">Elegant Snake Plant in Ceramic Pot</h3>
+                           <p class="product-
 
 
       <section id="services" class="services-section">
@@ -458,77 +503,12 @@
    <!-- JavaScript -->
    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   
-   <!-- LightGallery JS -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script> -->
    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
    
    <script src="./assets/package/swiper-bundle.min.js"></script>
    <script src="./aos-master/dist/aos.js"></script>
    <script src="./assets/js/main.js"></script>
    
-   
-   <script>
-      AOS.init({
-         easing: 'ease-in-out-sine'
-      });
-      
-      // Initialize LightGallery
-      // lightGallery(document.getElementById('lightgallery'));
-   </script>
-   <!--
-   <script>
-      const canvas = document.getElementById("snowCanvas");
-      const ctx = canvas.getContext("2d");
-      
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      canvas.style.position = "fixed";
-      canvas.style.top = "0";
-      canvas.style.left = "0";
-      canvas.style.pointerEvents = "none"; // Makes sure clicks go through
-      
-      let snowflakes = [];
-      
-      function createSnowflakes() {
-         for (let i = 0; i < 100; i++) {
-            snowflakes.push({
-               x: Math.random() * canvas.width,
-               y: Math.random() * canvas.height,
-               radius: Math.random() * 3 + 2,
-               speed: Math.random() * 3 + 1,
-            });
-         }
-      }
-      
-      function drawSnowflakes() {
-         ctx.clearRect(0, 0, canvas.width, canvas.height);
-         ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
-         ctx.beginPath();
-         snowflakes.forEach((flake) => {
-            ctx.moveTo(flake.x, flake.y);
-            ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
-         });
-         ctx.fill();
-      }
-      
-      function updateSnowflakes() {
-         snowflakes.forEach((flake) => {
-            flake.y += flake.speed;
-            if (flake.y > canvas.height) flake.y = 0; // Reset to top
-         });
-      }
-      
-      function animate() {
-         drawSnowflakes();
-         updateSnowflakes();
-         requestAnimationFrame(animate);
-      }
-      
-      createSnowflakes();
-      animate();
-   </script>
-   -->
 </body>
 
 </html>
