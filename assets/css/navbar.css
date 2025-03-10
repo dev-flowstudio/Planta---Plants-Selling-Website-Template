@@ -74,7 +74,7 @@
    transition: .3s;
 }
 
-.nav-content .nav-menu .nav-item>a.active,
+.nav-content .nav-menu .nav-item>a.active::before,
 .nav-content .nav-menu .nav-item>a:hover::before {
    color: var(--link-hover);
    transform: scaleX(1);
@@ -327,7 +327,7 @@
    .nav-actions {
       flex: none;
    }
-
+   
    .nav-actions .social-media {
       display: none;
    }
