@@ -623,7 +623,7 @@
 .about-section {
    width: 100%;
    height: max-content;
-   background: linear-gradient(#0209, #0209), url("../img/houseplant-pot-table-wallpaper-preview.jpg") no-repeat center / cover;
+   background: linear-gradient(#0209, #0209), url("../images/houseplant-pot-table-wallpaper-preview.jpg") no-repeat center / cover;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -773,7 +773,7 @@
 .contact-section {
    width: 100%;
    padding: 100px 3rem;
-   background: url("../img/the-abstract-white-with-flowerpot-on-a-table-near-the-window-and-curtain-clean-minimal-style-mood-background-free-photo.jpg") no-repeat center / cover;
+   background: url("../images/the-abstract-white-with-flowerpot-on-a-table-near-the-window-and-curtain-clean-minimal-style-mood-background-free-photo.jpg") no-repeat center / cover;
 }
 
 .contact-section .section-container {
