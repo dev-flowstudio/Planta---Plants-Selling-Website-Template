@@ -227,6 +227,27 @@ backToTopBtn.addEventListener('click', () => {
 
 
 
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-item>a");
+
+const observer = new IntersectionObserver(entries => {
+   entries.forEach(entry => {
+      if (entry.isIntersecting) {
+         navLinks.forEach(link => link.classList.remove("active"));
+         document.querySelector(`a[href="#${entry.target.id}"]`).classList.add("active");
+      }
+   });
+}, { threshold: 0.6 });
+
+sections.forEach(section => observer.observe(section));
+
+
+
+
+
+
+
 // document.addEventListener("DOMContentLoaded", function() {
 //    const backToTopBtn = document.getElementById("back-to-top");
 //    const footer = document.querySelector("footer"); // Adjust if needed
