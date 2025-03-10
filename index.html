@@ -2,58 +2,81 @@
 <html lang="en">
 
 <head>
-   <!-- Charset & Responsive Viewport -->
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- 1. Character Encoding & Viewport (Always First) -->
+   <meta charset="UTF-8"> <!-- Defines character encoding (UTF-8 for universal support) -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness -->
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <!-- Optimizes compatibility with older IE versions -->
    
-   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-   
+   <!-- 2. Google Site Verification (For Search Console Ownership) -->
    <meta name="google-site-verification" content="w0qz5BEexoc0bX7_JfubNzFi7rrsQnqSGiLdpxNucfY" />
    
-   <!-- SEO Title & Description -->
-   <title>Buy Indoor Décor Plants & Stylish Pots – Green Up Your Space</title>
-   <meta name="description" content="Shop a curated collection of indoor décor plants, elegant pots, and eco-friendly accessories. Elevate your space with nature’s beauty. Free delivery & easy payments!">
+   <!-- 3. SEO Meta Tags -->
+   <title>Buy Indoor Décor Plants & Stylish Pots – Green Up Your Space</title> <!-- Page Title -->
+   <meta name="description" content="Shop a curated collection of indoor décor plants, elegant pots, and eco-friendly accessories. Elevate your space with nature’s beauty. Free delivery & easy payments!"> <!-- SEO Meta Description -->
+   <meta name="keywords" content="indoor plants, décor plants, stylish pots, plant accessories, home greenery, eco-friendly décor"> <!-- Keywords for SEO (Less relevant today) -->
+   <meta name="author" content="Planta"> <!-- Author of the webpage -->
+   <meta name="robots" content="index, follow"> <!-- Allows search engines to index and follow links -->
+   <meta name="googlebot" content="index, follow"> <!-- Specifically for Google’s crawler -->
+   <link rel="canonical" href="https://dev-flowstudio.github.io/Planta---Plants-Selling-Website-Template/"> <!-- Prevents duplicate content issues -->
    
-   <!-- Keywords & Author (Optional, but helpful) -->
-   <meta name="keywords" content="indoor plants, décor plants, stylish pots, plant accessories, home greenery, eco-friendly décor">
-   <meta name="author" content="Planta">
-   
-   <!-- Open Graph (For Facebook, LinkedIn, etc.) -->
+   <!-- 4. Social Media Meta Tags (Open Graph & Twitter Cards) -->
+   <!-- Open Graph (Used by Facebook, LinkedIn, etc.) -->
    <meta property="og:title" content="Buy Indoor Décor Plants & Stylish Pots – Green Up Your Space">
    <meta property="og:description" content="Shop a curated collection of indoor décor plants, elegant pots, and eco-friendly accessories. Elevate your space with nature’s beauty. Free delivery & easy payments!">
    <meta property="og:image" content="https://dev-flowstudio.github.io/Planta---Plants-Selling-Website-Template/images/preview.jpg">
    <meta property="og:url" content="https://dev-flowstudio.github.io/Planta---Plants-Selling-Website-Template/">
    <meta property="og:type" content="website">
    
-   <!-- Twitter Card (For better Twitter sharing) -->
+   <!-- Twitter Cards (For Twitter Previews) -->
    <meta name="twitter:card" content="summary_large_image">
    <meta name="twitter:title" content="Buy Indoor Décor Plants & Stylish Pots – Green Up Your Space">
    <meta name="twitter:description" content="Shop a curated collection of indoor décor plants, elegant pots, and eco-friendly accessories. Elevate your space with nature’s beauty. Free delivery & easy payments!">
    <meta name="twitter:image" content="https://dev-flowstudio.github.io/Planta---Plants-Selling-Website-Template/images/preview.jpg">
-   <meta name="twitter:site" content="@YourTwitterHandle">
+   <meta name="twitter:site" content="@YourTwitterHandle"> <!-- Replace with your actual Twitter handle -->
    
-   <!-- Canonical URL (Avoids duplicate content issues) -->
-   <link rel="canonical" href="https://dev-flowstudio.github.io/Planta---Plants-Selling-Website-Template/">
+   <!-- 5. Performance Optimization Meta Tags -->
+   <meta name="theme-color" content="#4CAF50"> <!-- Sets theme color for mobile browsers -->
+   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Styles status bar on Apple devices -->
+   <meta name="format-detection" content="telephone=no"> <!-- Prevents automatic phone number linking on iOS -->
    
-   <!-- Favicon -->
-   <link rel="icon" href="https://yourwebsite.com/favicon.ico" type="image/x-icon">
-   <link rel="shortcut icon" type="image/x-icon" href="./icons/leaf-logo.svg">
+   <!-- 6. Favicon -->
+   <link rel="icon" href="https://yourwebsite.com/favicon.ico" type="image/x-icon"> <!-- Default favicon -->
+   <link rel="shortcut icon" type="image/x-icon" href="./icons/leaf-logo.svg"> <!-- Alternative favicon format -->
    
-   <!-- Preconnect -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://cdn.jsdelivr.net">
+   <!-- 7. Preconnect for Faster External Resource Loading -->
+   <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconnects to Google Fonts -->
+   <link rel="preconnect" href="https://cdn.jsdelivr.net"> <!-- Preconnects to JS/CSS CDN -->
+   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin> <!-- Preconnects to Cloudflare CDN -->
    
-   <!-- External Stylesheets -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!-- 8. External CSS Stylesheets (Loaded First) -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"> <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> <!-- Swiper (For sliders) -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Font Awesome Icons -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS (Animate on Scroll Library) -->
    
-   <!-- Stylesheets -->
+   <!-- I added these Stylesheets (These should be removed once the site os published) -->
    <link rel="stylesheet" href="./assets/bootstrap-icons-1.11.2/font/bootstrap-icons.min.css" type="text/css" media="all" />
    <link rel="stylesheet" href="./assets/package/swiper-bundle.min.css">
    <!-- <link rel="stylesheet" href="./aos-master/dist/aos.css"> -->
-   <link rel="stylesheet" href="./assets/css/style.css">
+   <!-- End of I added Stylesheets -->
+   
+   <link rel="stylesheet" href="./assets/css/style.css"> <!-- Local Stylesheet -->
+   
+   <!-- 9. Critical Inline CSS (For Faster Initial Render) -->
+   <style>
+      /* Not needed since there is a style.css file is loading soon */
+      /* body {
+         font-family: 'Arial', sans-serif;
+         background-color: #f8f9fa;
+         margin: 0;
+         padding: 0;
+      } */
+   </style>
+   
+   <!-- 10. JavaScript Files (Use async or defer to Improve Load Time) -->
+   <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- jQuery (Asynchronously loaded) -->
+   <script async src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> <!-- Swiper.js (For sliders) -->
+   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS Library (For animations) -->
 </head>
 
 <body>
