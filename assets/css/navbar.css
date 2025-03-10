@@ -28,7 +28,7 @@
    font-weight: bold;
    display: flex;
    align-items: center;
-   flex: 2.5;
+   flex: 2;
 }
 
 .nav-content .brand-logo:hover {
@@ -46,7 +46,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   flex: 7;
+   flex: 8;
 }
 
 .nav-content .nav-menu .nav-item {
@@ -160,7 +160,7 @@
    display: flex;
    align-items: center;
    justify-content: flex-end;
-   flex: 2.5;
+   flex: 2;
 }
 
 /*
@@ -207,6 +207,8 @@
 
 
 
+
+
 .nav-actions .social-media {
    display: flex;
    align-items: center;
@@ -214,12 +216,19 @@
 
 .nav-actions .social-media a {
    color: var(--link-color);
-   margin-right: 1rem;
+   margin-right: 1.5rem;
+}
+
+.nav-actions .social-media a i {
+   font-weight: bold;
 }
 
 .nav-actions .social-media a:hover {
    color: var(--link-hover);
 }
+
+
+
 
 .nav-actions .signup-btn {
    background: var(--button-accent);
@@ -317,10 +326,6 @@
    
    .nav-actions {
       flex: none;
-   }
-   
-   .nav-actions .social-media {
-      display: none;
    }
    
    .nav-actions #menu-icon {
