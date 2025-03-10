@@ -327,6 +327,10 @@
    .nav-actions {
       flex: none;
    }
+
+   .nav-actions .social-media {
+      display: none;
+   }
    
    .nav-actions #menu-icon {
       display: block;
