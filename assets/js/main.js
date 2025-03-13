@@ -21,7 +21,7 @@ AOS.init({
 
 onload = () => {
    // Hide preloader
-   setTimeout(() => preloader.style.display = 'none', 500);
+   setTimeout(() => preloader.style.display = 'none');
    // Set header height to window height
    site_header.style.height = window.innerHeight + 'px';
 };
