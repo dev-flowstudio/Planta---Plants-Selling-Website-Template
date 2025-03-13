@@ -69,9 +69,11 @@
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS (Animate on Scroll Library) -->
    
    <!-- I added these Stylesheets (These should be removed once the site os published) -->
-   <link rel="stylesheet" href="./assets/bootstrap-icons-1.11.2/font/bootstrap-icons.min.css" type="text/css" media="all" />
+   <!-- <link rel="stylesheet" href="./assets/bootstrap-icons-1.11.2/font/bootstrap-icons.min.css" type="text/css" media="all" /> -->
+   <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="./assets/fontawesome-free-6.7.2-web/css/all.min.css">
    <link rel="stylesheet" href="./assets/package/swiper-bundle.min.css">
-   <!-- <link rel="stylesheet" href="./aos-master/dist/aos.css"> -->
+   <link rel="stylesheet" href="./aos-master/dist/aos.css">
    <!-- End of I added Stylesheets -->
    
    <link rel="stylesheet" href="./assets/css/style.css"> <!-- Local Stylesheet -->
@@ -91,67 +93,58 @@
    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- jQuery (Asynchronously loaded) -->
    <script async src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> <!-- Swiper.js (For sliders) -->
    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS Library (For animations) -->
-
-
-
-
-
-
-
-
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "ItemList",
-  "name": "Best Selling Indoor Plants",
-  "itemListElement": [
-    {
-      "@type": "Product",
-      "name": "Elegant Ceramic Pot",
-      "image": "https://yourwebsite.com/images/ceramic-pot.jpg",
-      "description": "A stylish and durable ceramic pot perfect for indoor plants.",
-      "sku": "CERAMIC-POT-001",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "price": "29.99",
-        "availability": "https://schema.org/InStock",
-        "url": "https://yourwebsite.com/products/ceramic-pot"
+   
+   
+   <script type="application/ld+json">
+      {
+         "@context": "https://schema.org/",
+         "@type": "ItemList",
+         "name": "Best Selling Indoor Plants",
+         "itemListElement": [
+         {
+            "@type": "Product",
+            "name": "Elegant Ceramic Pot",
+            "image": "https://yourwebsite.com/images/ceramic-pot.jpg",
+            "description": "A stylish and durable ceramic pot perfect for indoor plants.",
+            "sku": "CERAMIC-POT-001",
+            "offers": {
+               "@type": "Offer",
+               "priceCurrency": "USD",
+               "price": "29.99",
+               "availability": "https://schema.org/InStock",
+               "url": "https://yourwebsite.com/products/ceramic-pot"
+            }
+         },
+         {
+            "@type": "Product",
+            "name": "Snake Plant in Modern Pot",
+            "image": "https://yourwebsite.com/images/snake-plant.jpg",
+            "description": "Low-maintenance snake plant in a sleek, modern pot.",
+            "sku": "SNAKE-PLANT-002",
+            "offers": {
+               "@type": "Offer",
+               "priceCurrency": "USD",
+               "price": "39.99",
+               "availability": "https://schema.org/InStock",
+               "url": "https://yourwebsite.com/products/snake-plant"
+            }
+         },
+         {
+            "@type": "Product",
+            "name": "Hanging Pothos Plant",
+            "image": "https://yourwebsite.com/images/hanging-pothos.jpg",
+            "description": "A beautiful pothos plant in a stylish hanging planter.",
+            "sku": "POTHOS-003",
+            "offers": {
+               "@type": "Offer",
+               "priceCurrency": "USD",
+               "price": "24.99",
+               "availability": "https://schema.org/InStock",
+               "url": "https://yourwebsite.com/products/hanging-pothos"
+            }
+         }]
       }
-    },
-    {
-      "@type": "Product",
-      "name": "Snake Plant in Modern Pot",
-      "image": "https://yourwebsite.com/images/snake-plant.jpg",
-      "description": "Low-maintenance snake plant in a sleek, modern pot.",
-      "sku": "SNAKE-PLANT-002",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "price": "39.99",
-        "availability": "https://schema.org/InStock",
-        "url": "https://yourwebsite.com/products/snake-plant"
-      }
-    },
-    {
-      "@type": "Product",
-      "name": "Hanging Pothos Plant",
-      "image": "https://yourwebsite.com/images/hanging-pothos.jpg",
-      "description": "A beautiful pothos plant in a stylish hanging planter.",
-      "sku": "POTHOS-003",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "price": "24.99",
-        "availability": "https://schema.org/InStock",
-        "url": "https://yourwebsite.com/products/hanging-pothos"
-      }
-    }
-  ]
-}
-</script>
+   </script>
 </head>
 
 <body>
@@ -165,20 +158,20 @@
       </div>
    </div>
    
-    <header id="site-header">
+   <header id="site-header">
       <div class="header-container">
          <nav class="navbar">
             <div class="nav-content">
-               <a href="index.html" class="brand-logo">
+               <a data-aos="fade-in" data-aos-once="true" href="index.html" class="brand-logo">
                   <img class="icon" src="./assets/icons/leaf-logo.svg" alt="Planta logo">
                   planta
                </a>
                
-                              <ul class="nav-menu">
+               <ul data-aos="fade-in" data-aos-once="true" class="nav-menu">
                   <li class="nav-item"><a class="active" href="#site-header">Home</a></li>
                   <li class="nav-item"><a href="#gallery">Gallery</a></li>
                   <li class="nav-item"><a href="#inspiration">Plant care tips</a></li>
-
+                  
                   <li class="nav-item dropdown-menu">
                      <button class="menu-btn" type="button" aria-expanded="false">Shop <i class="bi bi-chevron-down"></i></button>
                      <ul class="dropdown">
@@ -221,7 +214,7 @@
                      <label for="search"><i class="bi bi-search"></i></label>
                   </form> -->
                   
-                  <nav class="social-media">
+                  <nav data-aos="fade-in" data-aos-once="true" class="social-media">
                      <a href="javascript: void(0)"><i class="fab fa-facebook-f"></i></a>
                      <a href="javascript: void(0)"><i class="fab fa-instagram"></i></a>
                      <a href="javascript: void(0)"><i class="fab fa-whatsapp"></i></a>
@@ -229,9 +222,9 @@
                   
                   <!-- <a class="cart" href="javascript: void(0)"><i class="bi bi-cart"></i></a> -->
                   
-                  <a href="javascript: void(0)" class="signup-btn">Sign up</a>
+                  <a data-aos="fade-in" data-aos-once="true" href="javascript: void(0)" class="btn signup-btn">Sign up</a>
                   
-                  <button id="menu-icon" type="button">
+                  <button data-aos="fade-in" data-aos-once="true" id="menu-icon" type="button">
                      <span></span>
                      <span></span>
                   </button>
@@ -240,9 +233,9 @@
          </nav>
          
          <div class="hero-content">
-            <h1 data-aos="zoom-in" class="hero-heading"><span>Shop Beautiful Décor</span> <br> Plants & Everything to Style Them</h1>
-            <p data-aos="zoom-in" class="hero-subheading">From lush indoor plants to handcrafted pots and accessories, we provide everything you need to create a stunning, nature-filled home.</p>
-            <a data-aos="zoom-in" href="#products" class="hero-cta-btn"><img src="./assets/icons/leaf-icon.svg" alt=""> Shop now</a>
+            <h1 data-aos="fade-up" data-aos-once="true" data-aos-duration="500" class="hero-heading"><span>Shop Beautiful Décor</span> <br> Plants & Everything to Style Them</h1>
+            <p data-aos="fade-up" data-aos-once="true" data-aos-delay="250" data-aos-duration="500" class="hero-subheading">From lush indoor plants to handcrafted pots and accessories, we provide everything you need to create a stunning, nature-filled home.</p>
+            <a data-aos="fade-up" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" href="#products" class="btn hero-cta-btn"><img src="./assets/icons/leaf-icon.svg" alt=""> Shop now</a>
          </div>
          
          <!-- Hero slider main container -->
@@ -284,83 +277,83 @@
          </div>
       </div>
    </header>
-
-
-
-<main id="main-content">
+   
+   
+   
+   
+   <main id="main-content">
       <section id="gallery" class="gallery-section">
          <div class="section-container">
-            <h2 data-aos="zoom-in" class="section-title"><span>"Inspiration in Every</span> <br> Leaf – Stunning Indoor Green Décor"</h2>
-            <p data-aos="zoom-in" class="section-description">Explore our curated gallery of beautifully styled indoor spaces. From cozy corners to statement greenery, get inspired to bring nature’s elegance into your home.</p>
+            <h2 data-aos="fade-up" data-aos-once="true" class="section-title"><span>"Inspiration in Every</span> <br> Leaf – Stunning Indoor Green Décor"</h2>
+            <p data-aos="fade-up" data-aos-once="true" class="section-description">Explore our curated gallery of beautifully styled indoor spaces. From cozy corners to statement greenery, get inspired to bring nature’s elegance into your home.</p>
             
             <div class="gallery-grid">
-               <div data-aos="zoom-in" class="grid-item">
+               <div data-aos="fade-in" data-aos-once="true" class="grid-item">
                   <img src="./assets/images/galleryImage1.jpg" alt="">
                </div>
-               <div data-aos="zoom-in" class="grid-item">
+               <div data-aos="fade-in" data-aos-once="true" class="grid-item">
                   <img src="./assets/images/galleryImage2.jpg" alt="">
                </div>
-               <div data-aos="zoom-in" class="grid-item">
+               <div data-aos="fade-in" data-aos-once="true" class="grid-item">
                   <img src="./assets/images/galleryImage3.jpg" alt="">
                </div>
-               <div data-aos="zoom-in" class="grid-item">
+               <div data-aos="fade-in" data-aos-once="true" class="grid-item">
                   <img src="./assets/images/galleryImage4.jpg" alt="">
                </div>
-               <div data-aos="zoom-in" class="grid-item">
+               <div data-aos="fade-in" data-aos-once="true" class="grid-item">
                   <img src="./assets/images/galleryImage5.jpg" alt="">
                </div>
             </div>
             
-            <a data-aos="zoom-in" href="javascript: void(0)" class="btn-more">More images</a>
+            <a data-aos="fade-in" data-aos-once="true" href="javascript: void(0)" class="btn btn-more">More images</a>
          </div>
       </section>
       
       
       
-      <section data-aos="zoom-in" class="inspiration-section">
-         <div class="container">
-            <h2 data-aos="zoom-in" class="section-title"><span>"Get Inspired: Creative</span> <br>Ways to Style Plants in Your Space"</h2>
-            <p data-aos="zoom-in" class="section-description">Discover creative ways to style your space with lush plants, elegant pots, and natural décor. Let nature breathe life into every corner of your home.</p>
+      <section id="inspiration" class="inspiration-section">
+         <div class="section-container">
+            <h2 data-aos="fade-up" data-aos-once="true" class="section-title"><span>"Get Inspired: Creative</span> <br>Ways to Style Plants in Your Space"</h2>
+            <p data-aos="fade-up" data-aos-once="true" class="section-description">Discover creative ways to style your space with lush plants, elegant pots, and natural décor. Let nature breathe life into every corner of your home.</p>
             
             <div class="inspiration-grid">
-               <div data-aos="zoom-in" class="inspiration-card">
-                  <img src="indoor.jpg" alt="Indoor Styling">
+               <div data-aos="fade-in" data-aos-once="true" class="inspiration-card">
+                  <img src="./assets/images/galleryImage1.jpg" alt="Indoor Styling">
                   <h3>Indoor Styling</h3>
                   <p>Perfect plant placement for cozy homes.</p>
                </div>
-               <div data-aos="zoom-in" class="inspiration-card">
-                  <img src="outdoor.jpg" alt="Outdoor Beauty">
+               <div data-aos="fade-in" data-aos-once="true" class="inspiration-card">
+                  <img src="./assets/images/galleryImage4.jpg" alt="Outdoor Beauty">
                   <h3>Outdoor Beauty</h3>
                   <p>Create a refreshing garden corner.</p>
                </div>
-               <div data-aos="zoom-in" class="inspiration-card">
-                  <img src="low-maintenance.jpg" alt="Low Maintenance Picks">
+               <div data-aos="fade-in" data-aos-once="true" class="inspiration-card">
+                  <img src="./assets/images/galleryImage3.jpg" alt="Low Maintenance Picks">
                   <h3>Low Maintenance Picks</h3>
                   <p>Greenery that thrives effortlessly.</p>
                </div>
-               <div data-aos="zoom-in" class="inspiration-card">
-                  <img src="small-space.jpg" alt="Small Space Ideas">
+               <div data-aos="fade-in" data-aos-once="true" class="inspiration-card">
+                  <img src="./assets/images/galleryImage4.jpg" alt="Small Space Ideas">
                   <h3>Small Space Ideas</h3>
                   <p>Maximize space with the right plants.</p>
                </div>
             </div>
             
-            <a data-aos="zoom-in" href="#" class="btn">Explore More Ideas</a>
+            <a data-aos="fade-in" data-aos-once="true" href="#" class="btn">Explore More Ideas</a>
          </div>
       </section>
-      
-      
-      
+
+
       <section id="products" class="products-section">
          <div class="section-container">
-            <h2 data-aos="zoom-in" class="section-title"><span>"Beautiful Plants, Pots, and</span> <br>Décor to Bring Nature into Every Space"</h2>
-            <p data-aos="zoom-in" class="section-description">Transform your home with vibrant greenery, handcrafted pots, and nature-inspired accessories. Whether you're creating a cozy indoor oasis or enhancing your outdoor space, find everything you need to bring nature’s beauty into your life.</p>
+            <h2 data-aos="fade-up" data-aos-once="true" class="section-title"><span>"Beautiful Plants, Pots, and</span> <br>Décor to Bring Nature into Every Space"</h2>
+            <p data-aos="fade-up" data-aos-once="true" class="section-description">Transform your home with vibrant greenery, handcrafted pots, and nature-inspired accessories. Whether you're creating a cozy indoor oasis or enhancing your outdoor space, find everything you need to bring nature’s beauty into your life.</p>
             <!--Slider main container-->
-            <div data-aos="zoom-in" class="product-slider">
+            <div class="product-slider">
                <!--Additional required wrapper-->
                <div class="swiper-wrapper">
                   <!--Slides-->
-                  <div class="swiper-slide">
+                  <div data-aos="fade-in" data-aos-once="true" class="swiper-slide">
                      <div class="product-card">
                         <div class="product-image">
                            <img src="./assets/images/Chrysalidocarpus-lutescens-Areca-Palm-24x120cm-Aimee-Plant-Pot-Pear-33x28cm_e21e5e25-56eb-44e4-b7ff-1da6d35a61cb_1600x.jpg" alt="Elegant Snake Plant in Ceramic Pot">
@@ -378,7 +371,7 @@
                      </div>
                   </div>
                   
-                  <div class="swiper-slide">
+                  <div data-aos="fade-in" data-aos-once="true" class="swiper-slide">
                      <div class="product-card">
                         <div class="product-image">
                            <img src="./assets/images/Chlorophytum-Vittatum-Spider-Plant-12x35cm-Bilbao-Plant-Pot-Pale-Jade-14x14cm.jpg" alt="Elegant Snake Plant in Ceramic Pot">
@@ -396,7 +389,7 @@
                      </div>
                   </div>
                   
-                  <div class="swiper-slide">
+                  <div data-aos="fade-in" data-aos-once="true" class="swiper-slide">
                      <div class="product-card">
                         <div class="product-image">
                            <img src="./assets/images/Dracaena-fragrans-Burley-24x100cm-Raindrop-Tall-Balloon-Planter-Stone-37x60cm_1600x.jpg" alt="Elegant Snake Plant in Ceramic Pot">
@@ -414,7 +407,7 @@
                      </div>
                   </div>
                   
-                  <div class="swiper-slide">
+                  <div data-aos="fade-in" data-aos-once="true" class="swiper-slide">
                      <div class="product-card">
                         <div class="product-image">
                            <img src="./assets/images/Dracaena-fragrans-Lemon-Lime-Multi-Stem-24x140cm-_3stems_-Ben-Plant-Pot-Straw-Grass-30x41cm_1200x.jpg" alt="Elegant Snake Plant in Ceramic Pot">
@@ -432,7 +425,7 @@
                      </div>
                   </div>
                   
-                  <div class="swiper-slide">
+                  <div data-aos="fade-in" data-aos-once="true" class="swiper-slide">
                      <div class="product-card">
                         <div class="product-image">
                            <img src="./assets/images/Dracaena-fragrans-White-Jewel-Head-17x50cm-Cas-Plant-Pot-Cool-Grey-21x19cm_ce942f0f-7819-45e0-ba6d-ea10ae0a062d_1200x.jpg" alt="Elegant Snake Plant in Ceramic Pot">
@@ -450,7 +443,7 @@
                      </div>
                   </div>
                   
-                  <div class="swiper-slide">
+                  <div data-aos="fade-in" data-aos-once="true" class="swiper-slide">
                      <div class="product-card">
                         <div class="product-image">
                            <img src="./assets/images/eaa62a8025d3cdb39b4a8dbcea5d39e7.jpg" alt="Elegant Snake Plant in Ceramic Pot">
@@ -468,7 +461,7 @@
                      </div>
                   </div>
                   
-                  <div class="swiper-slide">
+                  <div data-aos="fade-in" data-aos-once="true" class="swiper-slide">
                      <div class="product-card">
                         <div class="product-image">
                            <img src="./assets/images/Sansevieria-trifasciata-Laurentii-Variegated-Snake-Plant-30x90cm-Charlie-Plant-Pot-White-Washed-32x31cm.jpg" alt="Elegant Snake Plant in Ceramic Pot">
@@ -486,7 +479,7 @@
                      </div>
                   </div>
                   
-                  <div class="swiper-slide">
+                  <div data-aos="fade-in" data-aos-once="true" class="swiper-slide">
                      <div class="product-card">
                         <div class="product-image">
                            <img src="./assets/images/aglaonema-plant-white-pot-isolated-white_357889-17.jpeg" alt="Elegant Snake Plant in Ceramic Pot">
@@ -508,10 +501,10 @@
                <div class="swiper-pagination"></div>
                
                <!--If we need navigation buttons-->
-               <div class="product-prev">
+               <div data-aos="fade-in" data-aos-once="true" class="product-prev">
                   <i class="bi bi-chevron-left"></i>
                </div>
-               <div class="product-next">
+               <div data-aos="fade-in" data-aos-once="true" class="product-next">
                   <i class="bi bi-chevron-right"></i>
                </div>
                
@@ -519,72 +512,71 @@
                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
             
-            <a data-aos="zoom-in" href="javascript: void(0)" class="btn-more">More products</a>
+            <a data-aos="fade-in" data-aos-once="true" href="javascript: void(0)" class="btn btn-more">More products</a>
          </div>
       </section>
       
       
-      <section data-aos="fade-up" id="about" class="about-section">
+      <section id="about" class="about-section">
          <div class="section-container">
             <div class="about-content">
-               <span data-aos="zoom-in" class="section-quote">&ldquo;</span>
-               <h2 data-aos="zoom-in" class="section-title">"Crafting Beauty with Nature’s Touch"</h2>
-               <p data-aos="zoom-in" class="section-description">At Planta, we believe in the power of greenery to inspire, refresh, and elevate your space. Every plant, pot, and décor item is chosen with care, blending sustainability with beauty.</p>
+               <span data-aos="fade-up" data-aos-once="true" class="section-quote">&ldquo;</span>
+               <h2 data-aos="fade-up" data-aos-once="true" class="section-title">"Crafting Beauty with Nature’s Touch"</h2>
+               <p data-aos="fade-up" data-aos-once="true" class="section-description">At Planta, we believe in the power of greenery to inspire, refresh, and elevate your space. Every plant, pot, and décor item is chosen with care, blending sustainability with beauty.</p>
             </div>
          </div>
       </section>
 
 
-
       <section id="services" class="services-section">
          <div class="section-container">
-            <h2 data-aos="zoom-in" class="section-title"><span>"Bringing Green </span><br> Dreams to Life – One Space at a Time"</h2>
-            <p data-aos="zoom-in" class="section-description">From personalized plant styling to expert care, we help you create a greener, more inviting space. Whether it’s your home, office, or a special event, our tailored greenery solutions make every environment thrive.</p>
+            <h2 data-aos="fade-up" data-aos-once="true" class="section-title"><span>"Bringing Green </span><br> Dreams to Life – One Space at a Time"</h2>
+            <p data-aos="fade-up" data-aos-once="true" class="section-description">From personalized plant styling to expert care, we help you create a greener, more inviting space. Whether it’s your home, office, or a special event, our tailored greenery solutions make every environment thrive.</p>
             
             <div class="service-list">
-               <div data-aos="zoom-in" class="service-item">
+               <div data-aos="fade-in" data-aos-once="true" class="service-item">
                   <img src="./assets/icons/leaf-logo.svg" alt="">
                   <h3 class="item-title">Handpicked Quality Assurance</h3>
                   <p class="item-description">"Every plant and décor item is carefully selected and inspected to ensure it meets our high standards of beauty, health, and durability—because your space deserves the best."</p>
                </div>
                
-               <div data-aos="zoom-in" class="service-item">
+               <div data-aos="fade-in" data-aos-once="true" class="service-item">
                   <img src="./assets/icons/leaf-logo.svg" alt="">
                   <h3 class="item-title">Expert Plant Guidance</h3>
                   <p class="item-description">"Not sure which plant suits your space? Our plant specialists are here to provide personalized advice on selection, styling, and care, making greenery effortless for you."</p>
                </div>
                
-               <div data-aos="zoom-in" class="service-item">
+               <div data-aos="fade-in" data-aos-once="true" class="service-item">
                   <img src="./assets/icons/leaf-logo.svg" alt="">
                   <h3 class="item-title">Complimentary Green Delivery</h3>
                   <p class="item-description">"Bringing nature to your doorstep, free of charge! Enjoy fast, reliable, and hassle-free delivery on all orders, ensuring your plants and décor arrive safely and in perfect condition."</p>
                </div>
                
-               <div data-aos="zoom-in" class="service-item">
+               <div data-aos="fade-in" data-aos-once="true" class="service-item">
                   <img src="./assets/icons/leaf-logo.svg" alt="">
                   <h3 class="item-title">Seamless & Secure Payments</h3>
                   <p class="item-description">"Shop with confidence using our flexible and secure payment options. From digital wallets to cash on delivery, we make transactions smooth and stress-free."</p>
                </div>
                
-               <div data-aos="zoom-in" class="service-item">
+               <div data-aos="fade-in" data-aos-once="true" class="service-item">
                   <img src="./assets/icons/leaf-logo.svg" alt="">
                   <h3 class="item-title">Easy Returns, No Worries</h3>
                   <p class="item-description">"We want you to love your green additions! If something isn’t quite right, our hassle-free return policy ensures an easy and smooth exchange process."</p>
                </div>
                
-               <div data-aos="zoom-in" class="service-item">
+               <div data-aos="fade-in" data-aos-once="true" class="service-item">
                   <img src="./assets/icons/leaf-logo.svg" alt="">
                   <h3 class="item-title">Sustainable & Eco-Friendly Commitment</h3>
                   <p class="item-description">"We prioritize sustainability by offering biodegradable pots, upcycled materials, and ethically sourced plants—helping you create a greener world with every purchase."</p>
                </div>
                
-               <div data-aos="zoom-in" class="service-item">
+               <div data-aos="fade-in" data-aos-once="true" class="service-item">
                   <img src="./assets/icons/leaf-logo.svg" alt="">
                   <h3 class="item-title">Seasonal & Exclusive Collections</h3>
                   <p class="item-description">"Stay ahead of the trends with our curated seasonal collections. Discover unique, limited-edition plants and décor pieces that bring freshness and style to your home."</p>
                </div>
                
-               <div data-aos="zoom-in" class="service-item">
+               <div data-aos="fade-in" data-aos-once="true" class="service-item">
                   <img src="./assets/icons/leaf-logo.svg" alt="">
                   <h3 class="item-title">Corporate & Bulk Orders</h3>
                   <p class="item-description">"Transform offices, cafés, and commercial spaces with our bulk ordering service. We provide customized greenery solutions tailored to businesses and interior designers."</p>
@@ -594,14 +586,14 @@
       </section>
       
       
-      <section data-aos="fade-up" class="contact-section">
+      <section id="contact" class="contact-section">
          <div class="section-container">
-            <h2 data-aos="zoom-in" class="section-title"><span>"Stay Inspired,</span> <br> Stay Green – Let’s Grow Together!"</h2>
-            <p data-aos="zoom-in" class="section-description">Join our community for expert plant care tips, exclusive collections, and fresh ideas to bring more nature into your life.</p>
+            <h2 data-aos="fade-up" data-aos-once="true" class="section-title"><span>"Stay Inspired,</span> <br> Stay Green – Let’s Grow Together!"</h2>
+            <p data-aos="fade-up" data-aos-once="true" class="section-description">Join our community for expert plant care tips, exclusive collections, and fresh ideas to bring more nature into your life.</p>
             
             <form class="subscription-form" action="" method="post" accept-charset="utf-8">
-               <input data-aos="zoom-in" class="text-field" type="text" name="email" id="email" value="" placeholder="Enter your mail" />
-               <input data-aos="zoom-in" class="submit-btn" type="submit" value="Subscribe">
+               <input data-aos="fade-in" data-aos-once="true" class="text-field" type="text" name="email" id="email" value="" placeholder="Enter your mail" />
+               <input data-aos="fade-in" data-aos-once="true" class="btn submit-btn" type="submit" value="Subscribe">
             </form>
          </div>
       </section>
@@ -612,15 +604,15 @@
    <footer id="site-footer">
       <div class="footer-content">
          <div class="row">
-            <div class="brand_info column">
-               <a data-aos="zoom-in" class="footer-logo" href="./index.html">
+            <div data-aos="fade-in" data-aos-once="true" class="brand_info column">
+               <a class="footer-logo" href="./index.html">
                   <img class="icon" src="./assets/icons/leaf-logo.svg" alt="Planta logo">
                   planta
                </a>
-               <p data-aos="zoom-in">"Sustainability, style, and greenery – all in one place. Explore our collection and bring nature’s elegance into your home."</p>
+               <p>"Sustainability, style, and greenery – all in one place. Explore our collection and bring nature’s elegance into your home."</p>
             </div>
             
-            <div data-aos="zoom-in" class="column">
+            <div data-aos="fade-in" data-aos-once="true" class="column">
                <h5>Quick links</h5>
                <ul>
                   <li><a href="./index.html">Home</a></li>
@@ -631,7 +623,7 @@
                </ul>
             </div>
             
-            <div data-aos="zoom-in" class="column">
+            <div data-aos="fade-in" data-aos-once="true" class="column">
                <h5>Our products</h5>
                <ul>
                   <li><a href="javascript: void(0)">Indoor plants</a></li>
@@ -642,7 +634,7 @@
                </ul>
             </div>
             
-            <div data-aos="zoom-in" class="column">
+            <div data-aos="fade-in" data-aos-once="true" class="column">
                <h5>Contact us</h5>
                <ul>
                   <li><a href="javascript: void(0)">Contact number</a></li>
@@ -650,12 +642,12 @@
                </ul>
             </div>
             
-            <div data-aos="zoom-in" class="footer__social column">
+            <div data-aos="fade-in" data-aos-once="true" class="footer__social column">
                <h5>Social media</h5>
                <ul class="social-links">
-                  <li><a href="javascript: void(0)"><i class="bi bi-facebook"></i> Facebook</a></li>
-                  <li><a href="javascript: void(0)"><i class="bi bi-instagram"></i> Instagram</a></li>
-                  <li><a href="javascript: void(0)"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+                  <li><a href="javascript: void(0)"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                  <li><a href="javascript: void(0)"><i class="fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="javascript: void(0)"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
                </ul>
             </div>
          </div>
@@ -665,7 +657,7 @@
             <h6 class="footer__credits"><a class="href" href="https://studioflow.site">flowstudio</a> creation</h6>
          </div>
          
-         <button data-aos="zoom-in" id="back-to-top" class="back-to-top">
+         <button data-aos="fade-up" data-aos-once="true" id="back-to-top" class="btn back-to-top">
             <i class="bi bi-chevron-up"></i>
          </button>
       </div>
