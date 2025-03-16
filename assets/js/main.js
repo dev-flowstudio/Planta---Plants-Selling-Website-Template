@@ -15,9 +15,11 @@ const preloader = document.querySelector('.preloader'),
 
 // Initialize AOS
 AOS.init({
-   easing: 'ease-in-out-sine'
+   easing: 'ease-in-out-sine',
+   // offset: 100, // Adjust trigger point
+   duration: 500, // Animation duration
+   once: true, // Animation happens only once
 });
-
 
 onload = () => {
    // Hide preloader
